@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        search
+// @name        search-for-actions
 // @namespace   dozory
 // @include     http://game.dozory.ru/*
 // @version     1.10
