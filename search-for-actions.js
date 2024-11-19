@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        search-for-actions
+// @name        search
 // @namespace   dozory
 // @include     http://game.dozory.ru/*
 // @version     1.10
@@ -17,7 +17,7 @@ function createSearchBox() {
 
     // Контейнер для строки поиска
     const searchBoxContainer = document.createElement('div');
-    searchBoxContainer.style.marginBottom = '10px';
+    searchBoxContainer.style.marginBottom = '2px';
 
     // Поле ввода
     const searchBox = document.createElement('input');
@@ -25,9 +25,11 @@ function createSearchBox() {
     searchBox.type = 'text';
     searchBox.placeholder = 'Поиск действий...';
     searchBox.style.width = '100%';
-    searchBox.style.fontSize = '10pt';
+    searchBox.style.fontSize = '9pt';
     searchBox.style.padding = '5px';
-    searchBox.style.border = '1px solid #ccc';
+   searchBox.style.border = '2px solid #ddd';
+    searchBox.style.borderRadius = '6px';
+    searchBox.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
     searchBox.style.boxSizing = 'border-box';
 
     searchBox.addEventListener('input', () => {
